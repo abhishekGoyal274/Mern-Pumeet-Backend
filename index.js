@@ -6,10 +6,7 @@ import bcrypt from "bcrypt";
 import Admin from "./models/admin.js";
 import Student from "./models/students.js";
 import SubAdmin from "./models/sub-admin.js";
-import * as dotenv from 'dotenv'
 
-dotenv.config()
-const port = process.env.DB_PASSWORD;
 const app = express();
 app.use(bodyParser.json({extended: true}));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -162,7 +159,7 @@ app.post("/login/admin", async(req, res)=>{
     }
 })
 
-const conn = "mongodb+srv://Abhishek-admin:"+port+"@cluster0.hsdpq.mongodb.net/PUMEET"
+const conn = "mongodb+srv://Abhishek-admin:Tango_0range@cluster0.hsdpq.mongodb.net/PUMEET"
 mongoose.connect(conn, { useNewUrlParser: true })
 .then(()=>app.listen(8000, ()=>console.log(`Server started on port 8000`)))
 .catch(error => console.log(error));

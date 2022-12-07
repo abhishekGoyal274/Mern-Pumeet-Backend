@@ -18,6 +18,8 @@ var backendHtml = '\
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">\
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">\
+        <link rel="icon" type="image/x-icon" href="https://puchd.ac.in/asset/pu-logo.png">\
+        <title>API PuMeet</title>\
             <body style="background-color:black; margin:0px; padding:0px; font-family: Josefin Sans, sans-serif;;\">\
                 <div style="display: flex;\
                     justify-content: center;\

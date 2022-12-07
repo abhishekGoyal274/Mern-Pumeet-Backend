@@ -159,7 +159,9 @@ app.post("/login/admin", async(req, res)=>{
     }
 })
 
+const PORT = process.env.PORT || 8000;
+
 const conn = "mongodb+srv://Abhishek-admin:Tango_0range@cluster0.hsdpq.mongodb.net/PUMEET"
 mongoose.connect(conn, { useNewUrlParser: true })
-.then(()=>app.listen(8000, ()=>console.log(`Server started on port 8000`)))
+.then(()=>app.listen(PORT, ()=>console.log(`Server started on port 8000`)))
 .catch(error => console.log(error));

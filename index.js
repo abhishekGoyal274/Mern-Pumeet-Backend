@@ -10,7 +10,9 @@ import SubAdmin from "./models/sub-admin.js";
 const app = express();
 app.use(bodyParser.json({extended: true}));
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(cors());
+app.use(cors({
+    origin: ['https://pu-meet.onrender.com',]
+}));
 
 var backendHtml = '\
         <html>\
